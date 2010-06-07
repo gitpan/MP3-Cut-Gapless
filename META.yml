@@ -1,0 +1,24 @@
+---
+abstract: 'Split an MP3 file without gaps (based on pcutmp3)'
+author:
+  - 'Andy Grundman <andy@hybridized.org>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.101550, CPAN::Meta::Converter version 2.101461'
+license: gpl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: MP3-Cut-Gapless
+requires:
+  Audio::Cuefile::Parser: 0
+  Digest::MD5: 0
+  File::Path: 0
+  File::Spec: 0
+resources:
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=MP3-Cut-Gapless
+  homepage: http://search.cpan.org/dist/MP3-Cut-Gapless/
+  repository: git://github.com/andygrundman/mp3-cut-gapless
+version: 0.01
