@@ -2,7 +2,7 @@ package MP3::Cut::Gapless;
 
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 require XSLoader;
 XSLoader::load('MP3::Cut::Gapless', $VERSION);
@@ -92,6 +92,8 @@ sub _init {
     
     open $self->{_fh}, '<', $self->{file} || die "Unable to open $self->{file} for reading";
     
+    binmode $self->{_fh};
+    
     # XS init
     $self->{_mp3c} = $self->__init(@_);
 }
@@ -144,7 +146,7 @@ MP3::Cut::Gapless - Split an MP3 file without gaps (based on pcutmp3)
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

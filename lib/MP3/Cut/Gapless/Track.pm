@@ -45,7 +45,7 @@ MP3::Cut::Gapless::Track - A track within a cue sheet
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

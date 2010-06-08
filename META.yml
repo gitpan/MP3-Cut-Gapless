@@ -6,7 +6,7 @@ build_requires: {}
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.101550, CPAN::Meta::Converter version 2.101461'
+generated_by: 'Dist::Zilla version 4.101550, CPAN::Meta::Converter version 2.101580'
 license: gpl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,4 +21,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=MP3-Cut-Gapless
   homepage: http://search.cpan.org/dist/MP3-Cut-Gapless/
   repository: git://github.com/andygrundman/mp3-cut-gapless
-version: 0.01
+version: 0.02

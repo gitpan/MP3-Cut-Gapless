@@ -4,11 +4,13 @@
       "Andy Grundman <andy@hybridized.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.101550",
-   "license" : "gpl_2",
+   "generated_by" : "Dist::Zilla version 4.101550, CPAN::Meta::Converter version 2.101580",
+   "license" : [
+      "gpl_2"
+   ],
    "meta-spec" : {
-      "url" : "http://github.com/dagolden/cpan-meta/",
-      "version" : 2
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
    },
    "name" : "MP3-Cut-Gapless",
    "prereqs" : {
@@ -19,10 +21,10 @@
       },
       "runtime" : {
          "requires" : {
-            "Audio::Cuefile::Parser" : "0",
-            "Digest::MD5" : "0",
-            "File::Path" : "0",
-            "File::Spec" : "0"
+            "Audio::Cuefile::Parser" : 0,
+            "Digest::MD5" : 0,
+            "File::Path" : 0,
+            "File::Spec" : 0
          }
       }
    },
@@ -39,5 +41,5 @@
          "web" : "http://github.com/andygrundman/mp3-cut-gapless"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }

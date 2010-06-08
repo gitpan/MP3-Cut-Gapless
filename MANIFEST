@@ -14,7 +14,9 @@ inc/MCGMakeMaker.pm
 include/buffer.h
 include/common.h
 include/mp3cut.h
+include/pinttypes.h
 include/ppport.h
+include/pstdint.h
 lib/MP3/Cut/Gapless.pm
 lib/MP3/Cut/Gapless/Track.pm
 src/buffer.c

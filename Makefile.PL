@@ -12,7 +12,7 @@ my %WriteMakefileArgs = (
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
   },
-  'DEFINE' => '-Wall -Wno-unused-value -Wno-format-security',
+  'DEFINE' => '',
   'DISTNAME' => 'MP3-Cut-Gapless',
   'EXE_FILES' => [],
   'INC' => '-I. -I.. -Isrc -Iinclude',
@@ -25,9 +25,9 @@ my %WriteMakefileArgs = (
     'File::Path' => '0',
     'File::Spec' => '0'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'depend' => {
-    'Gapless.c' => 'include/buffer.h include/common.h include/mp3cut.h include/ppport.h src/buffer.c src/common.c src/mp3cut.c'
+    'Gapless.c' => 'include/buffer.h include/common.h include/mp3cut.h include/pinttypes.h include/ppport.h include/pstdint.h src/buffer.c src/common.c src/mp3cut.c'
   },
   'test' => {
     'TESTS' => 't/*.t'
