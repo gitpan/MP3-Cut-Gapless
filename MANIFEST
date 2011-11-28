@@ -1,16 +1,9 @@
 Changes
 Gapless.xs
-INSTALL
-LICENSE
 MANIFEST
-META.json
-META.yml
 Makefile.PL
-README
 TODO
-dist.ini
 hints/darwin.pl
-inc/MCGMakeMaker.pm
 include/buffer.h
 include/common.h
 include/mp3cut.h
@@ -25,6 +18,7 @@ src/mp3cut.c
 t/04critic.rc
 t/04critic.t
 t/cue.t
+t/mp2/cbr-192.mp2
 t/mp3/abr-112-48khz-lame.mp3
 t/mp3/abr-56-mono-32khz-lame.mp3
 t/mp3/cbr-112-itunes.mp3
@@ -32,6 +26,7 @@ t/mp3/cbr-128-lame-crc.mp3
 t/mp3/cbr-128-lame-invalid-crc.mp3
 t/mp3/cbr-128-lame-pcut.mp3
 t/mp3/cbr-128-lame.mp3
+t/mp3/cbr-320-bug17348.mp3
 t/mp3/cbr-80-11025hz-MPEG25-lame.mp3
 t/mp3/cbr-96-22050hz-MPEG2-lame.mp3
 t/mp3/test.cue
@@ -53,6 +48,8 @@ t/ref/cbr-128-lame-pcut.mp3_1000-2000
 t/ref/cbr-128-lame.mllt
 t/ref/cbr-128-lame.mp3_0-1000
 t/ref/cbr-128-lame.mp3_1000-2000
+t/ref/cbr-320-bug17348.mp3_0-1000
+t/ref/cbr-320-bug17348.mp3_1000-2000
 t/ref/cbr-80-11025hz-MPEG25-lame.mp3_0-1000
 t/ref/cbr-80-11025hz-MPEG25-lame.mp3_1000-2000
 t/ref/cbr-96-22050hz-MPEG2-lame.mp3_0-1000
@@ -65,7 +62,6 @@ t/ref/vbr-118-itunes.mp3_0-1000
 t/ref/vbr-118-itunes.mp3_1000-2000
 t/ref/vbr-147-lame.mp3_0-1000
 t/ref/vbr-147-lame.mp3_1000-2000
-t/release-pod-coverage.t
-t/release-pod-syntax.t
 tools/leak.pl
 typemap
+META.yml                                 Module meta-data (added by MakeMaker)

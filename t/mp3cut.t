@@ -3,7 +3,7 @@ use strict;
 use File::Path ();
 use File::Spec::Functions;
 use FindBin ();
-use Test::More tests => 25;
+use Test::More tests => 28;
 
 use MP3::Cut::Gapless;
 
@@ -157,6 +157,34 @@ _test_read(
     
     is( _compare(\$out, 'cbr-128-lame.mp3_0-1000'), 1, 'split using cache file ok' );
 }
+
+# Test that an MP2 file fails correctly
+{
+    my $file = catfile( $FindBin::Bin, 'mp2', 'cbr-192.mp2' );
+    
+    my $c = eval {
+        MP3::Cut::Gapless->new(
+            file      => $file,
+            start_ms  => 0,
+            end_ms    => 1000,
+            cache_dir => catdir( $tmpdir, 'cache' ),
+        );
+    };
+    
+    like( $@, qr/Cannot gaplessly process file/, 'mp2 file aborted correctly' );
+}
+
+# Bug 17348, test file with extra data between ID3 tag and first MP3 frame
+{
+    _test_read(
+        file   => 'cbr-320-bug17348.mp3',
+        name   => '320k/44.1kHz bug 17348 offset bug',
+        splits => [
+            [ 0, 1000 ],
+            [ 1000, 2000 ],
+        ],
+    );
+}    
 
 END {
     File::Path::rmtree($tmpdir);
